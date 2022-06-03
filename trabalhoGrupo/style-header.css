@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 56px;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    grid-row: 1/2;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 36px;
+    grid-column: 1/2;
+}
+
+.lista-header {
+    display: flex;
+    gap: 40px;
+    grid-column: 2/3;
+    margin: 0 40px;
+}
+
+.lista-header a {
+    color: white;
+}
+
+.icone-login {
+    grid-column: 3/4;
+    justify-self: flex-end;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.icone-login img {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.lista-header a:hover {
+    color: #d2c2b0;
+}
+
+.icone-login:hover {
+    color: #d2c2b0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .lista-header {
+        display: none;
+    }
+}
+
+/* CARTAO */
+
+.cartao {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.66)), url(./img/periferia-fundo.jpg) repeat fixed 100%;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+}
+
+.texto-section-1 {
+    color: white;
+    grid-column: 4 / 13;
+    grid-row: 14 / 20;
+    letter-spacing: -0.03em;
+    font-size: 30px;
+    min-width:  492px;
+}
+
+.botao-arrasta {
+    background-color: #ffffff;
+    grid-column: 22/30;
+    grid-row: 9 / 22;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    width: 350px;
+    height: 321px;
+}
+
+.cifrao-texto {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -2.4px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.cifrao {
+    font-size: 46px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+#rangeValue {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.slider {
+    width: 280px;
+    height: 14px;
+    -webkit-appearance: none;
+    background-color: #d2d2d2;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 40%;
+    background: #e91f61;
+    cursor: pointer;
+    border: 4px solid #e91f61;
+    box-shadow: -407px 0 0 400px #000;
+}
+
+#btn-simule {
+    background-color: #e91f61;
+    color: white;
+    padding: 10px 70px;
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos {
+    background-color: #fff;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 235px 0 190px;
+    gap: 20px;
+}
+
+.quem-somos h1 {
+    color: #000;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: -1.44px;
+}
+
+.quem-somos h2 {
+    color: #000;
+    font-size: 30px;
+    letter-spacing: -1.4px;
+    position: relative;
+}
+
+#quem-somos-p1 {
+    color: #000;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+}
+
+#quem-somos-p2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.quem-somos strong {
+    font-weight: 900;
+    letter-spacing: 0px;
+}

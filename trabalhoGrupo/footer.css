@@ -1,0 +1,56 @@
+
+footer
+{
+ width: 100%;
+ min-height: 250px;
+ bottom: 0;
+ background: #1f1f24;
+ color: rgb(210, 194, 176);
+ padding: 100px 0 30px;
+ border-top-left-radius: 125px;
+ font-size: 13px;
+ line-height: 20px;
+ display: flex;
+}
+
+.boxs
+{
+ flex-basis: 25%;
+ padding-bottom: 10px;
+}
+
+.logo
+{
+ width: 8px;
+ margin-bottom: 30px;
+ 
+}
+
+.colo h3
+{
+ width: fit-content;
+ margin-bottom: 40px;
+ position: relative;
+}
+
+.email-id
+{
+ text-decoration: none;
+ width: fit-content;
+ margin: 20px 0;
+}
+
+.contato
+{
+ 
+}
+
+.atendimento
+{
+
+}
+
+.inf
+{
+ justify-content: center;
+}
