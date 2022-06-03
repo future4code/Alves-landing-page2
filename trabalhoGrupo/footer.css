@@ -10,47 +10,76 @@ footer
  border-top-left-radius: 125px;
  font-size: 13px;
  line-height: 20px;
- display: flex;
 }
 
+.card
+{
+ width: 85%;
+ margin: auto;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: flex-start;
+ justify-content: space-between;
+}
 .boxs
 {
  flex-basis: 25%;
  padding-bottom: 10px;
 }
 
-.logo
-{
- width: 8px;
- margin-bottom: 30px;
- 
-}
-
-.colo h3
+.boxs h3
 {
  width: fit-content;
  margin-bottom: 40px;
  position: relative;
 }
+.logo
+{
+ width: 150px;
+ margin-bottom: 30px;
+}
 
 .email-id
 {
- text-decoration: none;
  width: fit-content;
  margin: 20px 0;
+ text-decoration: none;
 }
 
-.contato
+.social .fab
 {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 40px;
+ font-size: 20px;
+ color:  #000;
+ background: rgb(210, 194, 176);
+ margin-right: 15px;
+ cursor: pointer;
+}
+
+.hr
+{
+ width: 90%;
+ border: 0;
+ border-bottom: 1px solid rgb(210, 194, 176);
+ margin: 20px auto;
+}
  
-}
-
-.atendimento
-{
-
-}
-
 .inf
 {
- justify-content: center;
+ text-align: center;
+}
+
+.underline
+{
+ width: 100%;
+ height: 5px;
+ background: rgb(210, 194, 176);
+ border-radius: 3px;
+ position: absolute;
+ top: 25px;
+ left: 0;
 }
