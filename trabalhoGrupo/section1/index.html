@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForUpper</title>
+    <link rel="stylesheet" href="./style-header.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a class="logo" href="./index.html"><img src="./img/logo-header-cortado.png" alt=""></a>
+        <nav>
+            <ul class="lista-header">
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Produtos</a></li>
+            </ul>
+        </nav>
+        <a class="icone-login" href="#">Login<img src="./img/icone-login.png"
+                onmouseover="this.src='./img/icone-login-hover.png'" onmouseout="this.src='./img/icone-login.png'"></a>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION 1 -->
+        <section class="cartao">
+            <div class="texto-section-1">
+                <h1>Crédito para moradores da periferia começarem seu próprio negócio.</h1>
+            </div>
+            <div class="botao-arrasta">
+                <p>De quanto você precisa?</p>
+                <div class="botao-slider">
+                    <div class="cifrao-texto">
+                        <p class="cifrao">R$&nbsp</p>
+                        <span id="rangeValue">1000</span>
+                    </div>
+                    <input class="slider" type="range" name="" value="1000" min="1000" max="20000" step="500"
+                        onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+                </div>
+                <script type="text/javascript">
+                    function rangeSlide(value) {
+                        document.getElementById('rangeValue').innerHTML = value;
+                    }
+                </script>
+                <button id="btn-simule">Simule</button>
+            </div>
+        </section>
+        <!-- QUEM SOMOS -->
+        <section class="quem-somos">
+            <h1>upfour.</h1>
+            <h2>
+                Aquela força que você precisava<br>
+                para construir seu prórpio negócio
+            </h2>
+            <p id="quem-somos-p1">Fundada em 2019, somos uma empresa que acredita no potencial das <strong>comunidades brasileiras.</strong></p>
+            <p id="quem-somos-p2">Com tecnologia de ponta e enfoque totalmente voltado para as <strong>periferias</strong>, nós oferecemos uma solução simples, rápida e econômica, que prioriza a experiência de nossos clientes e permite que cada vez mais pessoas persigam seus sonhos.
+
+            </p>
+
+        </section>
+
+
+
+        <section class="produtos"></section>
+        <section class="emprestimo"></section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
