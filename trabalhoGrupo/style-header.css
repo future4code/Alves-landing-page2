@@ -79,7 +79,7 @@ header {
     color: #d2c2b0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 1000px) {
     .lista-header {
         display: none;
     }
@@ -105,6 +105,7 @@ header {
     letter-spacing: -0.03em;
     font-size: 30px;
     min-width:  492px;
+    max-width: 492px;
 }
 
 .botao-arrasta {
@@ -179,6 +180,23 @@ header {
     letter-spacing: 0.5px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+    .cartao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-section-1 {
+        min-width: 10px;
+        max-width: 330px;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+}
+
 /* QUEM SOMOS */
 
 .quem-somos {
@@ -223,4 +241,46 @@ header {
 .quem-somos strong {
     font-weight: 900;
     letter-spacing: 0px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+    .quem-somos {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+    }
+
+    .quem-somos h1 {
+        color: #000;
+        font-size: 56px;
+        font-weight: 600;
+        letter-spacing: -1.44px;
+        margin: 0 16px;
+    }
+    
+    .quem-somos h2 {
+        color: #000;
+        font-size: 30px;
+        letter-spacing: -1.4px;
+        margin: 0 16px;
+    }
+    
+    #quem-somos-p1 {
+        color: #000;
+        font-size: 18px;
+        letter-spacing: -0.5px;
+        font-weight: 700;
+        margin: 0 16px;
+    }
+    
+    #quem-somos-p2 {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
