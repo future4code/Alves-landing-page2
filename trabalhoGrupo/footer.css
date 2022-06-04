@@ -1,6 +1,36 @@
+*,*::before,*::after
+{
+ box-sizing: border-box;
+}
+body
+{
+ font-family: poppins;
+ margin: 0;
+ display: grid;
+}
+
+main
+{
+ display: -webkit-flex;
+ display: -moz-deck;
+ display: -ms-flex;
+ display: -o-flex;
+ align-items: center;
+ justify-content: center;
+ line-height: 3.8;
+ font-size: 800px;
+ text-transform: uppercase;
+ font-weight: bold;
+}
 
 footer
 {
+ display: -webkit-flex;
+ display: -moz-deck;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+ flex-flow: row wrap;
  width: 100%;
  min-height: 250px;
  bottom: 0;
@@ -35,8 +65,8 @@ footer
 }
 .logo
 {
- width: 150px;
- margin-bottom: 30px;
+ width: 300px;
+ margin-bottom: 20px;
 }
 
 .email-id
@@ -59,19 +89,24 @@ footer
  margin-right: 15px;
  cursor: pointer;
 }
+ 
+.h5
+{
+text-align: center;
+color: rgb(210, 194, 176);
+padding-top: 50px;
+}
+
 
 .hr
 {
+ text-align: center;   
  width: 90%;
  border: 0;
  border-bottom: 1px solid rgb(210, 194, 176);
  margin: 20px auto;
 }
- 
-.inf
-{
- text-align: center;
-}
+
 
 .underline
 {
@@ -82,4 +117,39 @@ footer
  position: absolute;
  top: 25px;
  left: 0;
+}
+
+.footer-bottom
+{
+ text-align: center;
+ color: rgb(210, 194, 176);
+ padding-top: 50px;
+}
+
+@media screen and (min-width: 600px)
+{
+ .foooter-right > 
+ {
+  flex: 1;   
+ }
+ .footer-left
+ {
+  flex: 1 5px;
+ }
+ .footer-left
+ {
+  flex: 2 0px;
+ }
+}
+
+@media (max-width: 600px)
+{
+ .foooter
+ {
+  padding: 15px;   
+ }
+ .main
+ {
+  font-size: 55px;
+ }
 }
