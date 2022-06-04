@@ -128,15 +128,15 @@ padding-top: 50px;
 
 @media screen and (min-width: 600px)
 {
- .foooter-right > 
+ .boxs > 
  {
   flex: 1;   
  }
- .footer-left
+ .boxs
  {
   flex: 1 5px;
  }
- .footer-left
+ .boxs
  {
   flex: 2 0px;
  }
@@ -144,7 +144,7 @@ padding-top: 50px;
 
 @media (max-width: 600px)
 {
- .foooter
+ .boxs
  {
   padding: 15px;   
  }
