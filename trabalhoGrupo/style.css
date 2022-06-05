@@ -36,9 +36,10 @@ header {
     z-index: 1;
 }
 
-.logo {
+header .logo {
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 .logo img {
@@ -50,7 +51,8 @@ header {
     display: flex;
     gap: 40px;
     grid-column: 2/3;
-    margin: 0 40px;
+    position: relative;
+    left: -100px;
 }
 
 .lista-header a {
@@ -82,6 +84,21 @@ header {
 @media screen and (min-width: 320px) and (max-width: 1000px) {
     .lista-header {
         display: none;
+    }
+    
+    header {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        margin: 0%;
     }
 }
 
