@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForUpper</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a class="logo" href="./index.html"><img src="./img/logo-header-cortado.png" alt=""></a>
+        <nav>
+            <ul class="lista-header">
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+            </ul>
+        </nav>
+        <a class="icone-login" href="#">Login<img src="./img/icone-login.png"
+                onmouseover="this.src='./img/icone-login-hover.png'" onmouseout="this.src='./img/icone-login.png'"></a>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION 1 -->
+        <section class="cartao">
+            <div class="texto-section-1">
+                <h1>Crédito para moradores da periferia começarem seu próprio negócio.</h1>
+            </div>
+            <div class="botao-arrasta">
+                <p>De quanto você precisa?</p>
+                <div class="botao-slider">
+                    <div class="cifrao-texto">
+                        <p class="cifrao">R$&nbsp</p>
+                        <span id="rangeValue">1000</span>
+                    </div>
+                    <input class="slider" type="range" name="" value="1000" min="1000" max="20000" step="500"
+                        onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+                </div>
+                <script type="text/javascript">
+                    function rangeSlide(value) {
+                        document.getElementById('rangeValue').innerHTML = value;
+                    }
+                </script>
+                <button id="btn-simule">Simule</button>
+            </div>
+        </section>
+        <!-- QUEM SOMOS -->
+        <section class="quem-somos" id="quem-somos">
+            <h1>upfour.</h1>
+            <h2>
+                Aquela força que você precisava<br>
+                para construir seu prórpio negócio
+            </h2>
+            <p id="quem-somos-p1">Fundada em 2019, somos uma empresa que acredita no potencial das <strong>comunidades
+                    brasileiras.</strong></p>
+            <p id="quem-somos-p2">Com tecnologia de ponta e enfoque totalmente voltado para as
+                <strong>periferias</strong>, nós oferecemos uma solução simples, rápida e econômica, que prioriza a
+                experiência de nossos clientes e permite que cada vez mais pessoas persigam seus sonhos.
+            </p>
+        </section>
+        <!--SECTION PRODUTOS-->
+        <section class="produtos" id="produtos">
+            <div id="card-produtos">
+                <ul>
+                    <img src="./ima/aviao-pequeno.png" alt="icone de avião">
+                    <img id="casa" src="./ima/casa.png" alt="icone casa">
+                    <img id="icone-dividas" src="./ima/dividas.jpg" alt="icone pagar dividas">
+                    <img id="emprendorismo" src="./ima/emprendedorismo.png" alt="icone de emprendedorismo">
+                    <li id="descrever-produto">Para viajar, reformar a casa, pagar dívidas ou empreender!</li>
+                    <li id="descrever-produto">Contrate em poucos segundos de uma forma muito simples.</li>
+                    <li id="descrever-produto">Dinheiro na hora e com taxas mais atrativas. Faça logo seu:</li>
+                </ul>
+                <a id="link-produtos" href="#">
+                    <h1 class="titulo-produto">Crédito pessoal </h1>
+                </a>
+            </div>
+        </section>
+        <section class="produtos2">
+            <div>
+                <h3>Sistema de controle e orientação financeira</h3>
+                <p class="produto2-sobre"> Ajudamos pessoas de baixa renda</p>
+                <p class="produto2-sobre">a conseguir se organizar financeiramente</p>
+                <p class="produto2-sobre">e conquistar uma vida melhor.</p>
+                <p class="produto2-sobre">Ajudamos você criar seu próprio négocio.</p>
+                <a href="#"><button id="botao-produto2">Saiba mais</button></a>
+            </div>
+        </section>
+    </main>
+    <!--Seção 5 / Carla Campos -->
+    <section class="section">
+        <div class="content">
+            <div class="textBox">
+                <h1><span>Empréstimo</span> Pessoal Online e Rápido</h1>
+                <h4>A ForUpper é a primeira e maior plataforma de empréstimo 100% online do Brasil.
+                    Seguindo um modelo de crédito que foge de burocracia dos bancos,
+                    a ForUpper se consolida como a melhor opção para o consumidor fisico e pequeno empresário de
+                    periferia,
+                    garantindo a melhor taxa personalizada do mercado.
+                    Transparente, segura, rápida e prática para quem precisa de um empréstimo, sem pedir garantia,
+                    comprovação de renda e senha de banco.
+                    Os clientes podem solicitar empréstimos pessoais de R$ 1 a R$ 50 mil para pagar em até 36x.</p>
+                    Simule seu empréstimo usando nosso simulador.</h4>
+                <a href="./index.html">Simular</a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/Jovem.png" width="700" height="800" alt="Jovem empreendedor">
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+        <footer>
+            <img class="logo" src="./img/oie_transparent.png" alt="logo">
+            <div class="boxs">
+                <h3>Atendimento <div class="underline"><span></span></div>
+                </h3>
+                <p>Disponível entre 9 e 18 horas em dias úteis.</p>
+            </div>
+            <div class="boxs">
+                <h3>Contato <div class="underline"><span></span></div>
+                </h3>
+                <h4> (011) - 0123456789</h4>
+                <p class="email-id">forupper@labenu.com.br</p>
+            </div>
+            <div class="boxs">
+                <h3>Newsletter <div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Insira seu email" required>
+                    <button type="submit"> <i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social">
+                    <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"></a></i>
+                    <i class="fab fa-twitter"><a href="https://twitter.com/"></a></i>
+                    <i class="fab fa-instagram"><a href="https://www.instagram.com"></a></i>
+                    <i class="fab fa-pinterest"><a href="https://br.pinterest.com/"></a></i>
+                </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <p>© 2022 ForUpper S.A - Instituição de Pagamento. 00.000.000/0000-00
+                    Rua for, 04 - São Paulo, SP - 00000-000.</p>
+            </div>
+            </div>
+        </footer>
+</body>
+
+</html>
